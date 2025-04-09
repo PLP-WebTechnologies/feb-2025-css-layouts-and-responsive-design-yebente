@@ -1,0 +1,110 @@
+/* -----------------------------------
+   Reset & Base Styling
+----------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  
+  /* -----------------------------------
+     Flexbox Header with Navigation Bar
+  ----------------------------------- */
+  header {
+    background: #1e1e2f;
+    color: #fff;
+    display: flex; /* Flexbox layout for header */
+    justify-content: space-between; /* Align logo and nav bar */
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar {
+    display: flex; /* Flexbox layout for nav items */
+    gap: 1.5rem;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* -----------------------------------
+     Hero Section
+  ----------------------------------- */
+  .hero {
+    background: #ccc;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  /* -----------------------------------
+     About & Contact Sections
+  ----------------------------------- */
+  .about, .contact {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* -----------------------------------
+     Grid Layout for Services Section
+  ----------------------------------- */
+  .services {
+    padding: 2rem;
+  }
+  
+  .services-grid {
+    display: grid; /* CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive columns */
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  /* -----------------------------------
+     Footer Section
+  ----------------------------------- */
+  footer {
+    background: #1e1e2f;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* -----------------------------------
+     Media Query for Mobile Responsiveness
+  ----------------------------------- */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column; /* Stack nav items vertically */
+      align-items: flex-start;
+    }
+  
+    .hero {
+      padding: 2rem 1rem;
+    }
+  }  
